@@ -61,29 +61,28 @@ The classified satellite image providing the crop map of the AOI is shown in Fig
 
 ## Time Series Analysis:
 Time series analysis by NDVI (Normalized Difference Vegetation Index) is carried out to know the presence of vegetation cover in the crop period (April-December 2018) considered. The NDVI is built with NIR and Red band of Sentinel-2 SR imagery. 
-The fallow region has an NDVI range of 0.09 to 0.2 indicating the presence of grass or stem projections of harvested crops.
+- The fallow region has an NDVI range of 0.09 to 0.2 indicating the presence of grass or stem projections of harvested crops.
 
 <div align="center">
 <img src="https://github.com/aishwarya-10/crop_classification/assets/48954230/f28d0443-969b-4943-b119-6ad8b2cecd55">
 </div>
 
-Cotton’s NDVI value ranges from 0 to 0.52 indicating the presence of green vegetation from June 2018 to January 2019.
+- Cotton’s NDVI value ranges from 0 to 0.52 indicating the presence of green vegetation from June 2018 to January 2019.
 <div align="center">
 <img src="https://github.com/aishwarya-10/crop_classification/assets/48954230/5951b486-c67c-4190-8102-42307cd5899d">
 </div>
 
-Alfalfa has an NDVI value of 0 to 0.4 indicating green vegetation in the crop parcel. The crop shows an increase in NDVI from April to October 2018 and falls till January 2019.
+- Alfalfa has an NDVI value of 0 to 0.4 indicating green vegetation in the crop parcel. The crop shows an increase in NDVI from April to October 2018 and falls till January 2019.
 <div align="center">
-<img src="[https://github.com/aishwarya-10/crop_classification/assets/48954230/3e24fe52-c595-47bb-8005-58dad1a1b5ac">
+<img src="https://github.com/aishwarya-10/crop_classification/assets/48954230/3e24fe52-c595-47bb-8005-58dad1a1b5ac">
 </div>
-![image]()
 
-Orchard has irregular NDVI values in the crop period considered.
+- Orchard has irregular NDVI values in the crop period considered.
 <div align="center">
 <img src="https://github.com/aishwarya-10/crop_classification/assets/48954230/df66e1b1-9be4-49a0-9573-7bec8f067af1">
 </div>
 
-Barren shows the lowest NDVI values till the end of the crop period indicating no vegetation or crop growth.
+- Barren shows the lowest NDVI values till the end of the crop period indicating no vegetation or crop growth.
 <div align="center">
 <img src="https://github.com/aishwarya-10/crop_classification/assets/48954230/0f69ffcc-e286-4a0e-9f54-965072fc9ddb">
 </div>
@@ -91,5 +90,5 @@ Barren shows the lowest NDVI values till the end of the crop period indicating n
 # Conclusion
 The crop map and time series analysis came by the ground truth data. The crop map has been successively mapped using a random forest classifier in Google Earth Engine API. 
 
-<div align="center"> *** End*** </div>
+<div align="center"> <b> **** End **** </b> </div>
 
