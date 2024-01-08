@@ -1,4 +1,4 @@
-# CROP DETECTION USING RANDOM FOREST CLASSIFIER
+# CROP DETECTION USING RANDOM FOREST CLASSIFIER  
 
 # Introduction
 Crop detection involves the process of identifying and categorizing different types of crops or vegetation in a given area using remote sensing and data analysis techniques. This analysis helps in monitoring crop health, yield estimation, land use assessment, and other agricultural decisions. Remotely sensed data through optical and microwave imaging systems are generally used in this analysis. Typically, the nature of image data and acquired ground truth data affects the quality of the work.
@@ -25,21 +25,21 @@ The crop type data is acquired from the CAWa project in the Central Asia region.
 <div align="center">
 <p> Table 1. Available Crop Classes in the AOI </p>
 
-<img width="500" src= "https://github.com/aishwarya-10/crop_classification/assets/48954230/e2ed5359-b971-41f3-8aff-b3cfc10d0db6">
+<img width="600" src= "https://github.com/aishwarya-10/crop_classification/assets/48954230/e2ed5359-b971-41f3-8aff-b3cfc10d0db6">
 </div>
 
 The satellite imagery considered in classifying the crop data is Sentinel-2 Surface Reflectance (SR) data product freely available in the Earth Engine cloud data. Table 2 provides the specifications of the satellite imagery used. The crop identification analysis considers time-series data hence, SR data products are used as the reflectance doesn’t vary w.r.t the temporal atmospheric effects. The bands considered are Blue, Green, Red, Red Edge 1, Red Edge 2, Red Edge 3, NIR, SWIR 1, and SWIR 2. The data is filtered to the date range in August of 2018 and clipped to the AOI. Additionally, the data is filtered to less than 5% cloud cover and selected as the first least cloud cover imagery.
 
 <div align="center">
 <p> Table 2. Specifications of Raster Dataset </p>
-<img width="500" src="https://github.com/aishwarya-10/crop_classification/assets/48954230/cd6a5779-bcd4-40cb-aa4d-5a315ba6eaba">
+<img width="600" src="https://github.com/aishwarya-10/crop_classification/assets/48954230/cd6a5779-bcd4-40cb-aa4d-5a315ba6eaba">
 </div>
 
 ## Classification Model:
-The model training and testing phase involves the following steps:
-**Classifier:** The Random Forest (RF) classifier known to be the best of the supervised classification algorithm is applied to classify the crops.
-**Sample dataset:** Combines the features (Fallow, Cotton, Alfalfa, Orchard, and Built-up and barren) into a feature collection.
-**Train-test split:** The data was split into 30% test and the remaining training samples.
+The model training and testing phase involves the following steps:<br/>
+**Classifier:** The Random Forest (RF) classifier known to be the best of the supervised classification algorithm is applied to classify the crops.<br/>
+**Sample dataset:** Combines the features (Fallow, Cotton, Alfalfa, Orchard, and Built-up and barren) into a feature collection.<br/>
+**Train-test split:** The data was split into 30% test and the remaining training samples.<br/>
 **Accuracy:** A confusion matrix is formed from the test data and the accuracy of the model is calculated.
 
 # Results and Discussions
