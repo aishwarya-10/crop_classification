@@ -16,18 +16,21 @@ The process consists of
 - Model Training & Testing
 ## Data Collection:
 The crop type data is acquired from the CAWa project in the Central Asia region. The dataset consists of 8435 crop samples in total. Hence, the data undergoes several filtering steps, starting with the selection of the area of interest (AOI) and the corresponding year of acquisition, which in this case is 2018. Subsequently, I narrowed down the data to focus exclusively on summer crops cultivated in the AOI. Additionally, we account for the presence of permanent crops within the AOI. Furthermore, a specialized class for barren and built-up areas is established through manual annotation using Sentinel-2 imagery as a reference. Thus, the AOI encompasses cotton, alfalfa, and orchard crops, as well as fallow and built-up barren lands as shown in Figure 1. The number of features in each class is provided in Table 1.
-
-![image](https://github.com/aishwarya-10/crop_classification/assets/48954230/f82364da-72e3-4b7c-9de5-891b43a5c42d)
+<p align="center">
+<img width="200" src= "![image](https://github.com/aishwarya-10/crop_classification/assets/48954230/f82364da-72e3-4b7c-9de5-891b43a5c42d)">
 Figure 1. The ground truth data overlaid on Sentinel-2 satellite imagery
+</p>
 
+<p align="center">
 Table 1. Available Crop Classes in the AOI
-![image](https://github.com/aishwarya-10/crop_classification/assets/48954230/e2ed5359-b971-41f3-8aff-b3cfc10d0db6)
+<img width="200" src= "![image](https://github.com/aishwarya-10/crop_classification/assets/48954230/e2ed5359-b971-41f3-8aff-b3cfc10d0db6)">
+</p>
 
 The satellite imagery considered in classifying the crop data is Sentinel-2 Surface Reflectance (SR) data product freely available in the Earth Engine cloud data. Table 2 provides the specifications of the satellite imagery used. The crop identification analysis considers time-series data hence, SR data products are used as the reflectance doesn’t vary w.r.t the temporal atmospheric effects. The bands considered are Blue, Green, Red, Red Edge 1, Red Edge 2, Red Edge 3, NIR, SWIR 1, and SWIR 2. The data is filtered to the date range in August of 2018 and clipped to the AOI. Additionally, the data is filtered to less than 5% cloud cover and selected as the first least cloud cover imagery.
-
+<p align="center">
 Table 2. Specifications of Raster Dataset
 ![image](https://github.com/aishwarya-10/crop_classification/assets/48954230/cd6a5779-bcd4-40cb-aa4d-5a315ba6eaba)
-
+</p>
 ## Classification Model:
 The model training and testing phase involves the following steps:
 Classifier: The Random Forest (RF) classifier known to be the best of the supervised classification algorithm is applied to classify the crops.
