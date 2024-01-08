@@ -88,7 +88,7 @@ Time series analysis by NDVI (Normalized Difference Vegetation Index) is carried
 </div>
 
 # Conclusion
-The crop map and time series analysis came by the ground truth data. The crop map has been successively mapped using a random forest classifier in Google Earth Engine API. 
+The crop map and time series analysis came by the ground truth data. The crop map has been successively mapped using a random forest classifier in Google Earth Engine API.<br/>
 
 <div align="center"> <b> **** End **** </b> </div>
 
